@@ -1,0 +1,177 @@
+.navbar {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.navbar-toggler {
+  background-color: #d8b8d2;
+  position: absolute;
+  right: 80px;
+  top: 20px;
+}
+
+.navclr {
+  background-color: #f3e9f1;
+}
+
+.navclr .brand-img {
+  margin: auto;
+}
+
+.brand-img {
+  position: relative;
+  right: 30px;
+}
+
+.panier-icon {
+  font-size: 2.5rem;
+  color: black;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.navtext-color {
+  color: #111010;
+}
+
+.size-img-carroussel {
+  width: 100%;
+  height: 600px;
+}
+
+#bloc-reassure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f3e9f1;
+  text-align: center;
+}
+
+#bloc-reassure .reassure-card {
+  margin: 30px 50px 30px 50px;
+  text-align: center;
+}
+
+#bloc-reassure .reassure-card .reas-icon {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.titre_bloc-produit {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+
+#bloc-produit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#bloc-produit .card-product {
+  width: 320px;
+  margin: 20px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-align: center;
+  cursor: pointer;
+}
+
+#bloc-produit .card-product:hover {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+#bloc-produit .card-product .imageteddies {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#bloc-produit .card-product .form-select {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#bloc-produit .card-product .title-card {
+  padding: 10px;
+}
+
+#bloc-produit .card-product .bloc-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#bloc-produit .card-product .bloc-btn .voir-produit, #bloc-produit .card-product .bloc-btn .btn-panier {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  background-color: #f3e9f1;
+  -webkit-transition: ease-out .1s;
+  transition: ease-out .1s;
+}
+
+#bloc-produit .card-product .bloc-btn .voir-produit:hover, #bloc-produit .card-product .bloc-btn .btn-panier:hover {
+  background: #e1c8dc;
+  -webkit-transition: ease-in .1s;
+  transition: ease-in .1s;
+}
+
+#bloc-reassure {
+  margin-top: 50px;
+}
+
+.bck-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(8, 8, 8, 0.76);
+  margin: 0px;
+}
+
+.bck-footer .title-footer, .bck-footer .link-secondary {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

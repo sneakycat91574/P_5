@@ -1,0 +1,42 @@
+.navbar{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.navbar-toggler{
+    background-color: darken($color-secondary, 15%);
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+
+.navclr{
+    background-color: $color-secondary;
+   .brand-img{
+       margin: auto;
+
+   }
+}
+
+.brand-img{
+    position: relative;
+    right: 30px;
+}
+
+.panier-icon{
+    font-size: 2.5rem;
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.navtext-color{
+color: $font-color;
+}
+
+.size-img-carroussel{
+    width: 100%;
+    height: 600px;
+}
+

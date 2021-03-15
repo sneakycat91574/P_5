@@ -1,0 +1,19 @@
+#bloc-reassure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $color-secondary;
+    text-align: center;
+    
+    .reassure-card{
+      margin : 30px 50px 30px 50px;
+      text-align: center;
+      
+      .reas-icon{
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      }
+    }
+  
