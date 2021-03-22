@@ -1,11 +1,12 @@
 fetch('http://localhost:3000/api/teddies')
-.then((reponse)=>{reponse.json().then((reponse)=>{
-    let priceText = [];
-    let cardImg = [];
-    let colorBear = [];
-    let nameBear = [];
+    .then((reponse)=>{reponse.json().then((reponse)=>{
+        let priceText = [];
+        let cardImg = [];
+        let colorBear = [];
+        let nameBear = [];
+        console.log(reponse);
 
-    for( let i = 0; i<reponse.length; i++){
+    for( let i = 0; i<reponse.length; i++ ){
 
         let card = document.createElement('div');
         card.className = "card-product";
@@ -43,7 +44,7 @@ fetch('http://localhost:3000/api/teddies')
         colorBear.push(document.createElement('option'))
         colorBear[colorBear.length-1].textContent = reponse[i].colors;
         colorSelect.appendChild(colorBear[colorBear.length-1]);
-         
+        
         priceText.push(document.createElement('p'))
         priceText[priceText.length-1].textContent = reponse[i].price / 100  + ' €';
         priceText.className = 'price';
@@ -63,9 +64,10 @@ fetch('http://localhost:3000/api/teddies')
         btnCard.textContent = "Voir";
         blocBtn.appendChild(btnCard);
 
-        btnCard.addEventListener('click',(e)=>{location.href = "./product.html"});
-        card.addEventListener('click,',(e)=>{location.href = "./product.html"});
+        btnCard.addEventListener('click',(e)=>{
+            localStorage.setItem('produitOri',reponse[i]._id)
+            location.href = "./product.html"
+        });
             }
-
 })});
 
