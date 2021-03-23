@@ -68,6 +68,6 @@ fetch('http://localhost:3000/api/teddies')
             localStorage.setItem('produitOri',reponse[i]._id)
             location.href = "./product.html"
         });
-            }
+    }
 })});
 

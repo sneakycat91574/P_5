@@ -1,0 +1,21 @@
+#bloc-panier{
+    width: 100%;
+
+    .tab-panier{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .titre-produit{
+            width: 20%;
+        }
+
+        .image-panier{
+            width: 20%;
+        }
+
+        .prix-article{
+            width: 20%;
+        }
+    }
+}

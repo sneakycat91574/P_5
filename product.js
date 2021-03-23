@@ -1,7 +1,5 @@
 fetch('http://localhost:3000/api/teddies/' + localStorage.getItem('produitOri'))
     .then((reponse)=>{reponse.json().then((reponse)=>{
-        
-        console.log(reponse);
 
         let ficheProduit = document.querySelector('.fiche-produit');
         let ficheProduitImg = document.querySelector('.fiche-produit_img');
@@ -28,8 +26,6 @@ fetch('http://localhost:3000/api/teddies/' + localStorage.getItem('produitOri'))
             ficheProduitInfo.appendChild(selectColors);
            };
 
-
-        
         let priceText = document.createElement('p');
         priceText.textContent = reponse.price / 100  + ' €';
         priceText.className = 'prix';
@@ -45,12 +41,19 @@ fetch('http://localhost:3000/api/teddies/' + localStorage.getItem('produitOri'))
         btnPanier.textContent = 'Ajouter au panier';
         ficheProduitInfo.appendChild(btnPanier);
 
+        btnPanier.addEventListener('click', (e)=>{
+           // localStorage.setItem('bearProduct', JSON.stringify(reponse))
+            
+            if(localStorage.getItem("bearProduct")){
+                let item = JSON.parse(localStorage.getItem("bearProduct"));
+                console.log(item);
+                item.push(reponse);
+                localStorage.setItem("bearProduct", JSON.stringify(item));
+            }
+            
+            else localStorage.setItem("bearProduct","["+JSON.stringify(reponse)+"]");
+
         });
-});
 
-
-
-
-
-
-
+    }
+    )});
