@@ -41,6 +41,7 @@ fetch('http://localhost:3000/api/teddies/' + localStorage.getItem('produitOri'))
         btnPanier.textContent = 'Ajouter au panier';
         ficheProduitInfo.appendChild(btnPanier);
 
+
         btnPanier.addEventListener('click', (e)=>{
            // localStorage.setItem('bearProduct', JSON.stringify(reponse))
             
@@ -57,3 +58,6 @@ fetch('http://localhost:3000/api/teddies/' + localStorage.getItem('produitOri'))
 
     }
     )});
+
+    let ajoutPanier = document.getElementsByClassName("ajout-panier");
+    ajouterPanier.textContent = panier.length;

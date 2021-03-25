@@ -2,9 +2,10 @@
 @import "./utils/mixins";
 @import "./base/base";
 @import "./layout/nav";
-@import "./layout/reassureinfo";
 @import "./pages/product";
 @import "./pages/panier";
+@import "./layout/reassureinfo";
+
 
 .titre_bloc-produit{
   text-align: center;

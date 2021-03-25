@@ -53,6 +53,7 @@
               <div class="panier">
                 <a href="./panier.html">
                   <i class="fas fa-shopping-cart panier-icon"></i>
+                  <div class="ajout-panier"></div>
                 </a>
                 </div>
           </div>
@@ -60,10 +61,61 @@
   
       </header>  
 
-  <main>
+  <main id="page-panier">
 
     <div id="bloc-panier">
+      <h1 class="h2 titre-panier">Panier</h1>
 
+    </div>
+
+    <div class="bloc-formulaire">
+      <h2>Veuillez </h2>
+      <form>
+        <div class="form-row">
+         
+            <div class="form-group col-md-6">
+              <label for="inputname">Nom</label>
+              <input type="text" class="form-control" placeholder="Nom">
+              
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputfirstname">Prénom</label>
+              <input type="text" class="form-control" placeholder="Prénom">
+            </div>
+          
+          <div class="form-group col">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary"></button>
+      </form>
     </div>
 
   <section id="bloc-reassure">
