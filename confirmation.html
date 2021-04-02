@@ -42,7 +42,7 @@
         </div>
         <div class="navbar navbar-dark navclr box-shadow">
           <div class="container d-flex">
-            <a href="./index.html" class="navbar-brand d-flex">
+            <a href="index.html" class="navbar-brand d-flex">
               <div class="box_brand-img">
                 <img class="brand-img" src="./orinoco.png">
               </div>
@@ -59,23 +59,21 @@
           </div>
         </div>
   
-      </header>
-  
+      </header>  
 
-  <main>
+<main>
 
-    <section id="bloc_fiche-produit">
-    
-      <div class="fiche-produit">
-        <div class="fiche-produit_img">
-          
+    <div class="bloc-confirmation">
+      <h3 class="titre-confirmation">
+        Merci pour votre commande !</h3>
+      
+        <div class="confirmation-commande">
+          <p>Bonjour, <span id="lastname"></span> nous vous remercions pour votre achat, vous allez bientôt recevoir votre numéro de suivi par mail</p>  
+          <p>Voici votre numéro de commande <span id="orderID"></span></p>
         </div>
-        <div class="fiche-produit_info">
-          
-        </div>
-      </div>
 
-    </section>
+        <a  class="lien-retour" href="index.html">Retour</a>
+    </div>
 
   <section id="bloc-reassure">
         
@@ -135,18 +133,8 @@
  
   </footer>
 
-  <script src="product.js"> descriptionBear.push(document.createElement('p'))
-    descriptionBear[descriptionBear.length-1].textContent = reponse[i].description;
-    card.appendChild(descriptionBear[descriptionBear.length-1]);
-    
-    
-    let btnPanier = document.createElement('button');
-        btnPanier.className = 'btn-panier';
-        btnPanier.textContent = 'Ajouter au panier';
-        card.appendChild(btnPanier);
 
-    
-        </script>
+  <script src="confirmation.js"></script>
 
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -154,5 +142,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
-
   </body>

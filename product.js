@@ -52,12 +52,18 @@ fetch('http://localhost:3000/api/teddies/' + localStorage.getItem('produitOri'))
                 localStorage.setItem("bearProduct", JSON.stringify(item));
             }
             
-            else localStorage.setItem("bearProduct","["+JSON.stringify(reponse)+"]");
+            else  localStorage.setItem("bearProduct","["+JSON.stringify(reponse)+"]");
 
         });
 
     }
     )});
+    
+    let panier = JSON.parse(localStorage.getItem("bearProduct"));
+    let ajoutPanier = document.querySelector(".ajout-panier");
 
-    let ajoutPanier = document.getElementsByClassName("ajout-panier");
-    ajouterPanier.textContent = panier.length;
+    if(!panier){
+        ajoutPanier.style.display = 'none';
+
+    } else {
+        ajoutPanier.textContent = panier.length;}

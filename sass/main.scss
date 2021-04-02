@@ -4,7 +4,9 @@
 @import "./layout/nav";
 @import "./pages/product";
 @import "./pages/panier";
+@import "./pages/confirmation";
 @import "./layout/reassureinfo";
+@import "./layout/footer";
 
 
 .titre_bloc-produit{
@@ -74,17 +76,5 @@
   margin-top: 50px;
 }
 
-.bck-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: $footer-color;
-    margin: 0px;
-
-    .title-footer, .link-secondary{
-        color: $color-primary;
-    }
-}
 
 

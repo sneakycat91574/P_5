@@ -1,0 +1,18 @@
+.bck-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $footer-color;
+    margin: auto;
+
+    .margin-footer{
+        margin-left: 20px;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .title-footer, .link-secondary{
+        color: $color-primary;
+    }
+}

@@ -64,59 +64,50 @@
   <main id="page-panier">
 
     <div id="bloc-panier">
-      <h1 class="h2 titre-panier">Panier</h1>
+      <h1 class="h4 titre-panier">Panier</h1>
 
     </div>
 
-    <div class="bloc-formulaire">
-      <h2>Veuillez </h2>
-      <form>
+  <div class="bloc-formulaire">
+
+   <div class="hide-div-form"> 
+     
+    <h2 class="titre-formulaire mb-5 text-center">Remplissez le formulaire pour finalisez votre commande</h2>
+     
+    <form  id="formulaire">
         <div class="form-row">
          
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 mb-4">
               <label for="inputname">Nom</label>
-              <input type="text" class="form-control" placeholder="Nom">
+              <input name="nom" type="text" class="form-control" placeholder="ex : Dupont" minlength="2" maxlength="150" required>
               
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 mb-4">
               <label for="inputfirstname">Prénom</label>
-              <input type="text" class="form-control" placeholder="Prénom">
+              <input type="text" name="prenom" class="form-control" placeholder="ex : Jacques" minlength="2" maxlength="150" required>
             </div>
           
-          <div class="form-group col">
+          <div class="form-group col mb-4">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="ex : votremail@mail.com" required>
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <div class="form-group mb-4">
+          <label for="inputAddress">Adresse</label>
+          <input type="text" name="adresse" class="form-control" id="inputAddress" placeholder="ex : 23 Rue des champs" minlength="4" maxlength="150" required>
         </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
+        <div class="form-row mb-4">
           <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+            <label for="inputCity">Ville</label>
+            <input type="text" name="ville" class="form-control" id="inputCity" placeholder ="ex : Paris" minlength="2" maxlength="50" required>
           </div>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
+        <div class="form-row mb-4">
+          <button type="submit" class="btn btn-light text-center row btn-confirmation">Commander</button>
         </div>
-        <button type="submit" class="btn btn-primary"></button>
       </form>
     </div>
+  </div>
 
   <section id="bloc-reassure">
         
@@ -146,7 +137,7 @@
 
   <footer class="pt-4 bck-footer">
     
-    <div class="row">
+    <div class="row margin-footer">
       <div class="col-8 col-md">
         <h5 class="title-footer">En savoir plus</h5>
         <ul class="list-unstyled text-small">
